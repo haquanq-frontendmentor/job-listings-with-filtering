@@ -20,7 +20,7 @@ export const JobPostItem = (props: JobPostItemProps) => {
           alt=""
         />
         <div>
-          <p class="relative mb-[0.875rem] flex w-fit items-baseline gap-6 text-[0.9375rem] leading-[1.125rem] font-bold text-green-400 md:mb-[0.625rem] md:text-lg">
+          <p class="relative h-6 mb-[0.875rem] flex w-fit items-center gap-4 text-[0.9375rem] leading-[1.125rem] font-bold text-green-400 md:mb-[0.625rem] md:text-lg">
             <span>{props.detail.company}</span>
             <span class="flex gap-2 text-sm leading-none tracking-[-0.02em] text-white uppercase *:rounded-full *:pt-[0.4375rem] *:pr-2 *:pb-[0.1875rem] *:pl-[0.5625rem]">
               <Show when={props.detail.new}>
@@ -38,9 +38,9 @@ export const JobPostItem = (props: JobPostItemProps) => {
           </h3>
           <p class="flex items-center text-base leading-none md:text-lg">
             <span>{props.detail.postedAt}</span>
-            <span class="mx-[0.625rem] block aspect-square w-1 rounded-full bg-gray-400 opacity-70 md:mr-[1.125rem] md:ml-[1.1875rem]"></span>
+            <span class="mx-[0.625rem] block aspect-square w-1 rounded-full bg-gray-400 opacity-70 md:mr-[1rem] md:ml-[1.0625rem]"></span>
             <span>{props.detail.contract}</span>
-            <span class="mx-[0.625rem] block aspect-square w-1 rounded-full bg-gray-400 opacity-70 md:mr-[1.125rem] md:ml-[1.1875rem]"></span>
+            <span class="mx-[0.625rem] block aspect-square w-1 rounded-full bg-gray-400 opacity-70 md:mr-[1rem] md:ml-[1.0625rem]"></span>
             <span>{props.detail.location}</span>
           </p>
         </div>

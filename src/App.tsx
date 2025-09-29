@@ -1,3 +1,4 @@
+import { JobListing } from "./component/JobListing";
 import { HeaderBackgroundDesktop, HeaderBackgroundMobile } from "./assets/images";
 
 export const App = () => {
@@ -9,6 +10,7 @@ export const App = () => {
           <img class="md:hidden" src={HeaderBackgroundMobile} alt="" />
           <img class="hidden h-full md:block" src={HeaderBackgroundDesktop} alt="" />
         </div>
+        <JobListing />
       </main>
     </>
   );

@@ -33,3 +33,43 @@
         /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
             url("./assets/fonts/league-spartan-v15-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
+
+@theme {
+    --color-*: initial;
+
+    --color-white: hsl(0, 0%, 100%);
+
+    --color-gray-400: hsl(180, 8%, 52%);
+
+    --color-green-50: hsl(180, 52%, 96%);
+    --color-green-400: hsl(180, 29%, 50%);
+    --color-green-900: hsl(180, 14%, 20%);
+
+    --font-*: initial;
+
+    --font-weight-*: initial;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+@layer base {
+    body {
+        font-family: "League Spartan", system-ui;
+        line-height: 1;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    p {
+        @apply text-gray-400;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-bold text-green-900;
+    }
+}

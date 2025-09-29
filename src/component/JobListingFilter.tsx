@@ -5,7 +5,7 @@ import { JobListingFilterItem } from "./JobListingFilterItem";
 export const JobListingFilter = () => {
   return (
     <Show when={!filters.isEmpty()}>
-      <div class="p-5 flex justify-between bg-white rounded-md items-center gap-4 md:px-10 md:py-5 md:absolute md:-top-[2.25rem] md:left-0 md:right-0">
+      <div class="p-5 flex justify-between bg-white rounded-md items-center gap-4 md:px-10 shadow-(--shadow-elevation-high) md:py-5 md:absolute md:-top-[2.25rem] md:left-0 md:right-0">
         <ul class="flex flex-wrap gap-4 items-start">
           <For each={filters.getFilters().roles}>
             {(role) => <JobListingFilterItem type="roles" value={role} ariaLabel={`Remove ${role} filter`} />}

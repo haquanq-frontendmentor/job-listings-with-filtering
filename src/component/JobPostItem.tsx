@@ -9,7 +9,7 @@ interface JobPostItemProps {
 
 export const JobPostItem = (props: JobPostItemProps) => {
   return (
-    <li class="relative rounded-md bg-white p-6 shadow-lg md:px-10 md:py-8 lg:flex lg:items-center lg:justify-between">
+    <li class="relative rounded-md bg-white p-6 shadow-(--shadow-elevation-high) md:px-10 md:py-8 lg:flex lg:items-center lg:justify-between">
       <Show when={props.detail.featured}>
         <div class="absolute top-0 bottom-0 left-0 w-1 rounded-l-md bg-green-400"></div>
       </Show>

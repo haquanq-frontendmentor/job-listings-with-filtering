@@ -54,6 +54,13 @@
 }
 
 @layer base {
+    :root {
+        --focus-outline-offset: 3px;
+        --focus-outline-width: 3px;
+        --focus-outline-style: dashed;
+        --focus-outline-color: hsl(180, 14%, 20%);
+    }
+
     body {
         font-family: "League Spartan", system-ui;
         line-height: 1;
@@ -71,5 +78,20 @@
     h2,
     h3 {
         @apply font-bold text-green-900;
+    }
+
+    @supports selector(:focus-visible) {
+        a:focus,
+        button:focus {
+            outline: none;
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline-offset: var(--focus-outline-offset);
+            outline-width: var(--focus-outline-width);
+            outline-color: var(--focus-outline-color);
+            outline-style: var(--focus-outline-style);
+        }
     }
 }

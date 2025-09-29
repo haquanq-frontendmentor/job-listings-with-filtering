@@ -1,8 +1,8 @@
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import solid from "vite-plugin-solid";
-import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     plugins: [tailwindcss(), solid()],
-    base: "job-listings-with-filtering",
+    base: "/job-listings-with-filtering/",
 });

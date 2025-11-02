@@ -1,0 +1,15 @@
+{
+  "name": "Job Listings With Filtering",
+  "featured": false,
+  "colors:": {
+    "brand": "#5F9C95"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/job-listings-with-filtering/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "intermediate",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/interactive-job-listings-with-filter-using-solidjs-eV34CncHY-"
+  }
+}
